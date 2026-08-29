@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الجوري تركي المعاوي | منفذ أعمال مهندسة الذكاء الاصطناعي</title>
+  <meta name="description" content="منفذ أعمال الجوري تركي المعاوي، طالبة ذكاء اصطناعي تركز على تعلّم الآلة التطبيقي، الذكاء الاصطناعي التوليدي، الرؤية الحاسوبية، وتطبيقات مدعومة بالذكاء الاصطناعي." />
+  <meta name="author" content="الجوري تركي ناصر المعاوي" />
+  <meta name="theme-color" content="#05060a" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="الجوري تركي المعاوي | منفذ أعمال مهندسة الذكاء الاصطناعي" />
+  <meta property="og:description" content="مهندسة ذكاء اصطناعي ناشئة وبانية منتجات — تعلّم الآلة التطبيقي، الذكاء التوليدي، الرؤية الحاسوبية." />
+  <meta property="og:locale" content="ar_SA" />
+  <meta property="og:site_name" content="الجوري تركي المعاوي" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="الجوري تركي المعاوي | منفذ أعمال مهندسة الذكاء الاصطناعي" />
+  <meta name="twitter:description" content="مهندسة ذكاء اصطناعي ناشئة وبانية منتجات — تعلّم الآلة التطبيقي، الذكاء التوليدي، الرؤية الحاسوبية." />
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235b8cff'/%3E%3Cstop offset='1' stop-color='%23a56bff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='17' font-weight='800' fill='%2305060a' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Background atmosphere -->
+  <div class="bg-fx" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-noise" aria-hidden="true"></div>
+
+  <!-- Scroll progress -->
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav" id="nav" aria-label="Primary">
+    <div class="wrap">
+      <a class="brand" href="#home" aria-label="الجوري تركي المعاوي — الرئيسية">
+        <span class="dot" aria-hidden="true">A</span>
+        <span data-ar="الجوري تركي المعاوي" data-en="Aljory Turki Almuawi">الجوري تركي المعاوي</span>
+        <small data-ar="مهندسة ذكاء اصطناعي تحت التدريب" data-en="AI Engineer in Progress">مهندسة ذكاء اصطناعي تحت التدريب</small>
+      </a>
+      <div class="nav-links" id="navlinks">
+        <a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+        <a href="#about" data-ar="نبذة عني" data-en="About">نبذة عني</a>
+        <a href="#projects" data-ar="المشاريع" data-en="Projects">المشاريع</a>
+        <a href="#skills" data-ar="المهارات" data-en="Skills">المهارات</a>
+        <a href="#achievements" data-ar="الإنجازات" data-en="Achievements">الإنجازات</a>
+        <a href="#education" data-ar="التعليم" data-en="Education">التعليم</a>
+        <a href="#contact" data-ar="تواصل" data-en="Contact">تواصل</a>
+      </div>
+      <div class="nav-cta">
+        <button class="lang-btn" id="langBtn" type="button" aria-label="Switch language">EN</button>
+        <a href="#contact" class="btn btn-primary btn-sm" data-ar="لنتواصل" data-en="Let's Connect">لنتواصل</a>
+        <button class="hamburger" id="hamburger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobilemenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobilemenu">
+    <button class="lang-btn" id="langBtnMobile" type="button">EN</button>
+    <a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+    <a href="#about" data-ar="نبذة عني" data-en="About">نبذة عني</a>
+    <a href="#projects" data-ar="المشاريع" data-en="Projects">المشاريع</a>
+    <a href="#skills" data-ar="المهارات" data-en="Skills">المهارات</a>
+    <a href="#achievements" data-ar="الإنجازات" data-en="Achievements">الإنجازات</a>
+    <a href="#education" data-ar="التعليم" data-en="Education">التعليم</a>
+    <a href="#contact" data-ar="تواصل" data-en="Contact">تواصل</a>
+    <a href="#contact" class="btn btn-primary" data-ar="لنتواصل" data-en="Let's Connect">لنتواصل</a>
+  </div>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <header class="hero" id="home">
+      <div class="wrap">
+        <div class="hero-text">
+          <span class="hero-eyebrow reveal"><span class="pulse"></span> <span data-ar="مستعدة للانتقال · بيشة، السعودية" data-en="Open to Relocation · Bisha, Saudi Arabia">مستعدة للانتقال · بيشة، السعودية</span></span>
+          <h1 class="reveal d1">
+            <span data-ar="الجوري تركي" data-en="Aljory Turki">الجوري تركي</span><br /><span class="grad" data-ar="المعاوي" data-en="Almuawi">المعاوي</span>
+          </h1>
+          <p class="hero-role reveal d1" data-ar="مهندسة ذكاء اصطناعي تحت التدريب" data-en="AI Engineer in Progress">مهندسة ذكاء اصطناعي تحت التدريب</p>
+          <p class="hero-statement reveal d2" data-ar="أحوّل الأفكار الذكية إلى تجارب حقيقية." data-en="Building intelligent ideas into real experiences.">أحوّل الأفكار الذكية إلى تجارب حقيقية.</p>
+          <p class="hero-ar reveal d2" data-ar="أحوّل الأفكار والمشكلات الواقعية إلى تجارب وحلول مدعومة بالذكاء الاصطناعي." data-en="أحوّل الأفكار والمشكلات الواقعية إلى تجارب وحلول مدعومة بالذكاء الاصطناعي.">أحوّل الأفكار والمشكلات الواقعية إلى تجارب وحلول مدعومة بالذكاء الاصطناعي.</p>
+          <p class="hero-desc reveal d3" data-ar="طالبة ذكاء اصطناعي في جامعة بيشة، شغوفة بتعلّم الآلة التطبيقي، والذكاء الاصطناعي التوليدي، ونماذج اللغات الكبيرة، وبناء تطبيقات مدعومة بالذكاء الاصطناعي." data-en="Artificial Intelligence student at University of Bisha, passionate about Applied Machine Learning, Generative AI, LLMs, and building AI-powered applications.">طالبة ذكاء اصطناعي في جامعة بيشة، شغوفة بتعلّم الآلة التطبيقي، والذكاء الاصطناعي التوليدي، ونماذج اللغات الكبيرة، وبناء تطبيقات مدعومة بالذكاء الاصطناعي.</p>
+          <div class="hero-meta reveal d3">
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span data-ar="بيشة، السعودية" data-en="Bisha, Saudi Arabia">بيشة، السعودية</span>
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M2 12h20"/></svg>
+              <span data-ar="مستعدة للانتقال" data-en="Open to Relocation">مستعدة للانتقال</span>
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/></svg>
+              <span data-ar="المستوى السابع · السنة الرابعة" data-en="Level 7 · Fourth Year">المستوى السابع · السنة الرابعة</span>
+            </span>
+          </div>
+          <div class="hero-cta reveal d4">
+            <a href="#projects" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              <span data-ar="استعرض أعمالي" data-en="View My Work">استعرض أعمالي</span>
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+              <span data-ar="لنتواصل" data-en="Let's Connect">لنتواصل</span>
+            </a>
+          </div>
+          <div class="hero-socials reveal d4">
+            <a href="https://www.linkedin.com/in/aljuri-turki-almuawi-37a6a7426" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8.34 18V9.99H5.67V18h2.67zM7 8.76a1.55 1.55 0 100-3.1 1.55 1.55 0 000 3.1zM18.34 18v-4.43c0-2.36-1.26-3.46-2.94-3.46-1.36 0-1.97.75-2.31 1.28V9.99h-2.67c.04.75 0 8.01 0 8.01h2.67v-4.47c0-.24.02-.48.09-.65.19-.48.63-.97 1.36-.97.96 0 1.35.73 1.35 1.8V18h2.45z"/></svg>
+            </a>
+            <a href="https://github.com/aljory002151-star" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.36 9.36 0 0112 6.84c.85 0 1.71.12 2.51.34 1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg>
+            </a>
+            <a href="mailto:aljory002151@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal d2">
+          <div class="visual-halo" aria-hidden="true"></div>
+          <canvas id="neural" aria-hidden="true"></canvas>
+          <span class="visual-badge vb-1" data-ar="الشبكات العصبية" data-en="Neural networks">الشبكات العصبية</span>
+          <span class="visual-badge vb-2" data-ar="نماذج لغوية · ذكاء توليدي" data-en="LLM · Generative AI">نماذج لغوية · ذكاء توليدي</span>
+          <span class="visual-badge vb-3" data-ar="رؤية حاسوبية" data-en="Computer Vision">رؤية حاسوبية</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about">
+      <div class="wrap">
+        <span class="section-tag reveal" data-ar="٠١ — لمحة" data-en="01 — Profile">٠١ — لمحة</span>
+        <h2 class="section-title reveal d1" data-ar="ما وراء الكود." data-en="Beyond the Code.">ما وراء الكود.</h2>
+        <p class="section-lead reveal d1" data-ar="ليست مجرد طالبة — مهندسة ذكاء اصطناعي ناشئة تحوّل النظرية إلى أشياء يلمسها الناس." data-en="Not just a student — an emerging AI engineer who turns theory into things people can actually use.">ليست مجرد طالبة — مهندسة ذكاء اصطناعي ناشئة تحوّل النظرية إلى أشياء يلمسها الناس.</p>
+
+        <div class="about-grid" style="margin-top:46px">
+          <div class="about-text">
+            <p class="reveal" data-ar="الجوري طالبة ذكاء اصطناعي في جامعة بيشة، بالسنة الرابعة (المستوى السابع)، بمعدل 4.66 / 5. لا تتعامل مع الذكاء الاصطناعي كمادة نظرية، بل كمجموعة أدوات لحل مشكلات حقيقية — وهي تنجذب لتحويل هذه الذكاء إلى شيء مرئي وقابل للاستخدام واللمس." data-en="Aljory is an Artificial Intelligence student at University of Bisha, in her fourth year (Level 7), maintaining a 4.66 / 5 GPA. She treats AI not as a theoretical subject but as a toolkit for solving real problems — and she is drawn to making that intelligence visible, usable, and tangible.">الجوري طالبة ذكاء اصطناعي في جامعة بيشة، بالسنة الرابعة (المستوى السابع)، بمعدل 4.66 / 5. لا تتعامل مع الذكاء الاصطناعي كمادة نظرية، بل كمجموعة أدوات لحل مشكلات حقيقية — وهي تنجذب لتحويل هذه الذكاء إلى شيء مرئي وقابل للاستخدام واللمس.</p>
+            <p class="reveal d1" data-ar="ما يميّزها هو غريزة البنّاء: تبنى نماذجًا أولية. تصبح الفكرة واجهة عاملة، ويصبح النموذج تجربة. يظهر اهتمامها بالاختراع وحل المشكلات والتصميم في كل فكرة تتناولها — من تذاكر مستقبلية إلى تفاصيل تدفق المستخدم." data-en="What sets her apart is a builder's instinct: she prototypes. A concept becomes a working interface, a model becomes an experience. Her interest in invention, problem-solving, and design shows up in the way she approaches every idea — from a future-facing ticketing concept to the small details of a user flow.">ما يميّزها هو غريزة البنّاء: تبنى نماذجًا أولية. تصبح الفكرة واجهة عاملة، ويصبح النموذج تجربة. يظهر اهتمامها بالاختراع وحل المشكلات والتصميم في كل فكرة تتناولها — من تذاكر مستقبلية إلى تفاصيل تدفق المستخدم.</p>
+            <p class="reveal d2" data-ar="تتقن كلًا من رياضيات تعلّم الآلة وصنعة تصميم المنتج، وتوجّه مسارها بوضوح نحو أن تصبح مهندسة ذكاء اصطناعي — شخصًا يُطلق أنظمة ذكية، لا يدرسها فقط." data-en="She is equally comfortable with the math of machine learning and the craft of product design, and she is deliberately steering her path toward becoming an AI Engineer — someone who ships intelligent systems, not just studies them.">تتقن كلًا من رياضيات تعلّم الآلة وصنعة تصميم المنتج، وتوجّه مسارها بوضوح نحو أن تصبح مهندسة ذكاء اصطناعي — شخصًا يُطلق أنظمة ذكية، لا يدرسها فقط.</p>
+          </div>
+          <aside class="about-aside">
+            <div class="stat reveal">
+              <div class="num grad">4.66</div>
+              <div class="lbl" data-ar="المعدل التراكمي · من 5.0" data-en="GPA · out of 5.0">المعدل التراكمي · من 5.0</div>
+            </div>
+            <div class="stat reveal d1">
+              <div class="num" data-ar="المستوى السابع" data-en="Level 7">المستوى السابع</div>
+              <div class="lbl" data-ar="السنة الرابعة · تخصص الذكاء الاصطناعي" data-en="Fourth Year · AI Degree">السنة الرابعة · تخصص الذكاء الاصطناعي</div>
+            </div>
+            <a class="madar-badge reveal d2" href="https://ish3-is.github.io/WEB/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              <span data-ar="عضوة في أكاديمية مدار التقنية" data-en="Member of Madar Tech Academy">عضوة في أكاديمية مدار التقنية</span>
+            </a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PHILOSOPHY ===================== -->
+    <section id="philosophy">
+      <div class="wrap">
+        <span class="section-tag reveal" data-ar="٠٢ — العقلية" data-en="02 — Mindset">٠٢ — العقلية</span>
+        <h2 class="section-title reveal d1" data-ar="كيف أفكّر." data-en="How I Think.">كيف أفكّر.</h2>
+        <p class="section-lead reveal d1" data-ar="أربعة مبادئ تحكم طريقة تعاطيي مع كل مشكلة ومشروع." data-en="Four principles that shape how I approach every problem and every build.">أربعة مبادئ تحكم طريقة تعاطيي مع كل مشكلة ومشروع.</p>
+
+        <div class="philo-grid">
+          <div class="card philo-item reveal">
+            <span class="idx">01</span>
+            <h3 data-ar="افهم المشكلة" data-en="Understand the Problem">افهم المشكلة</h3>
+            <p data-ar="أبدأ من المشكلة الحقيقية — لا من التقنية. المشكلة هي من يحدد الحل." data-en="I start from the real problem — not from the technology. The problem defines the solution.">أبدأ من المشكلة الحقيقية — لا من التقنية. المشكلة هي من يحدد الحل.</p>
+          </div>
+          <div class="card philo-item reveal d1">
+            <span class="idx">02</span>
+            <h3 data-ar="ابنِ لتتعلم" data-en="Build to Learn">ابنِ لتتعلم</h3>
+            <p data-ar="أحوّل الأفكار إلى نماذج أولية يمكن رؤيتها وتجربتها — أتعلّم بالصنع لا بالقراءة فقط." data-en="I turn ideas into prototypes you can actually see and try — learning by making, not just reading.">أحوّل الأفكار إلى نماذج أولية يمكن رؤيتها وتجربتها — أتعلّم بالصنع لا بالقراءة فقط.</p>
+          </div>
+          <div class="card philo-item reveal d2">
+            <span class="idx">03</span>
+            <h3 data-ar="صمّم للبشر" data-en="Design for People">صمّم للبشر</h3>
+            <p data-ar="التقنية القوية لا تزال بحاجة إلى تجربة واضحة وإنسانية لتكون مفيدة لأي أحد." data-en="Powerful technology still needs a clear, humane experience to be useful to anyone.">التقنية القوية لا تزال بحاجة إلى تجربة واضحة وإنسانية لتكون مفيدة لأي أحد.</p>
+          </div>
+          <div class="card philo-item reveal d3">
+            <span class="idx">04</span>
+            <h3 data-ar="تطوّري باستمرار" data-en="Keep Evolving">تطوّري باستمرار</h3>
+            <p data-ar="أتعلّم باستمرار وأطوّر مهاراتي مع تطوّر المجال نفسه." data-en="I learn continuously and grow my skills as the field itself moves forward.">أتعلّم باستمرار وأطوّر مهاراتي مع تطوّر المجال نفسه.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURED PROJECT ===================== -->
+    <section id="projects">
+      <div class="wrap">
+        <span class="section-tag reveal" data-ar="٠٣ — عمل مميز" data-en="03 — Featured Work">٠٣ — عمل مميز</span>
+        <h2 class="section-title reveal d1" data-ar="المشروع المميز." data-en="Featured Project.">المشروع المميز.</h2>
+        <p class="section-lead reveal d1" data-ar="أفضل مشروع يوضّح طريقة تفكيري: فكرة تحوّلت إلى منتج مستقبلي قابل للاستخدام." data-en="The build that best shows how I think: a concept turned into a usable, future-facing product.">أفضل مشروع يوضّح طريقة تفكيري: فكرة تحوّلت إلى منتج مستقبلي قابل للاستخدام.</p>
+
+        <article class="project reveal d2" aria-labelledby="bt-title">
+          <div class="project-top">
+            <div class="project-intro">
+              <p class="project-kicker" data-ar="مفهوم · نموذج أولي بالذكاء الاصطناعي" data-en="Concept · AI Prototype">مفهوم · نموذج أولي بالذكاء الاصطناعي</p>
+              <h3 id="bt-title" data-ar="التذاكر البيومترية" data-en="Biometric Tickets">التذاكر البيومترية</h3>
+              <p class="sub" data-ar="إعادة تصوّر الوصول للفعاليات عبر الهوية البيومترية." data-en="Reimagining event access through biometric identity.">إعادة تصوّر الوصول للفعاليات عبر الهوية البيومترية.</p>
+              <p class="hero-desc" style="margin-bottom:0" data-ar="نموذج أولي لمفهوم تذاكر تعتمد على الهوية البيومترية بدل الورق أو رمز الاستجابة السريعة (QR). بدلًا من إبراز تذكرة، يصبح وجهك وسيلة التحقق — ما يقلّل الاحتيال ويكافح السوق السوداء ويسهّل الدخول." data-en="A concept prototype for tickets built on biometric identity instead of paper or QR codes. Instead of showing a ticket, your face becomes the verification — reducing fraud, fighting the black market, and making entry smoother.">نموذج أولي لمفهوم تذاكر تعتمد على الهوية البيومترية بدل الورق أو رمز الاستجابة السريعة (QR). بدلًا من إبراز تذكرة، يصبح وجهك وسيلة التحقق — ما يقلّل الاحتيال ويكافح السوق السوداء ويسهّل الدخول.</p>
+            </div>
+            <div class="project-visual">
+              <!-- Interactive prototype phone -->
+              <div class="phone" role="group" aria-label="نموذج تطبيق التذاكر البيومترية">
+                <div class="screen">
+                  <div class="screen-head">
+                    <div class="app-name" data-ar="التذاكر البيومترية" data-en="BIOMETRIC TICKETS">التذاكر البيومترية</div>
+                    <h5 data-ar="وصول الفعالية" data-en="Event Access">وصول الفعالية</h5>
+                  </div>
+                  <div class="screen-body">
+                    <!-- Home state -->
+                    <div id="bt-home">
+                      <div class="ticket-card">
+                        <div class="ev" data-ar="قمة الذكاء الاصطناعي · بيشة" data-en="AI Summit · Bisha">قمة الذكاء الاصطناعي · بيشة</div>
+                        <div class="meta" data-ar="السبت · البوابة أ · المقعد 12C · مرتبط بك" data-en="Sat · Gate A · Seat 12C · Linked to you">السبت · البوابة أ · المقعد 12C · مرتبط بك</div>
+                      </div>
+                      <button class="verify-btn" id="verifyBtn" type="button">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 014 4v2a4 4 0 01-8 0V6a4 4 0 014-4z"/><path d="M5 10h14a2 2 0 012 2v6a4 4 0 01-4 4H7a4 4 0 01-4-4v-6a2 2 0 012-2z"/></svg>
+                        <span data-ar="تحقّق من الهوية" data-en="Verify Identity">تحقّق من الهوية</span>
+                      </button>
+                      <p class="verify-status" id="verifyStatus" data-ar="اضغط لمسح هويتك البيومترية" data-en="Tap to scan your biometric identity">اضغط لمسح هويتك البيومترية</p>
+                    </div>
+                    <!-- Scanning state -->
+                    <div id="bt-scan" class="hidden">
+                      <div class="ticket-face face-scan">
+                        <span class="laser"></span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="9" r="3.5"/><path d="M5 20a7 7 0 0114 0"/></svg>
+                      </div>
+                      <div class="scan-ring"></div>
+                      <p class="verify-status" id="scanStatus" data-ar="جارٍ مسح الهوية البيومترية…" data-en="Scanning biometric identity…">جارٍ مسح الهوية البيومترية…</p>
+                    </div>
+                    <!-- Success state -->
+                    <div id="bt-done" class="hidden">
+                      <div class="ticket-face">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                      </div>
+                      <p class="verify-status ok" data-ar="تم التحقق من الهوية ✓" data-en="Identity Verified ✓">تم التحقق من الهوية ✓</p>
+                      <div class="pill-row">
+                        <span class="pill" data-ar="التذكرة صالحة" data-en="Ticket Validated">التذكرة صالحة</span>
+                        <span class="pill" data-ar="السماح بالدخول" data-en="Entry Granted">السماح بالدخول</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Story -->
+          <div class="story">
+            <div class="reveal">
+              <p class="step" data-ar="المشكلة" data-en="THE PROBLEM">المشكلة</p>
+              <h4 data-ar="تذاكر مُشارَكة ومُعاد بيعها" data-en="Shared & resold tickets">تذاكر مُشارَكة ومُعاد بيعها</h4>
+              <p data-ar="يمكن التقاط التذاكر الرقمية كصور ومشاركتها أو إعادة بيعها بطرق غير مرغوبة، ما يكسر الثقة عند البوابة." data-en="Digital tickets can be screenshotted, shared, or resold in unwanted ways, breaking trust at the gate.">يمكن التقاط التذاكر الرقمية كصور ومشاركتها أو إعادة بيعها بطرق غير مرغوبة، ما يكسر الثقة عند البوابة.</p>
+            </div>
+            <div class="reveal d1">
+              <p class="step" data-ar="الفكرة" data-en="THE IDEA">الفكرة</p>
+              <h4 data-ar="الهوية هي التذكرة" data-en="Identity as the ticket">الهوية هي التذكرة</h4>
+              <p data-ar="ماذا لو أصبحت الهوية البيومترية للشخص — مثل وجهه — هي التذكرة نفسها؟" data-en="What if a person's biometric identity — like their face — became the ticket itself?">ماذا لو أصبحت الهوية البيومترية للشخص — مثل وجهه — هي التذكرة نفسها؟</p>
+            </div>
+            <div class="reveal d2">
+              <p class="step" data-ar="الحل" data-en="THE SOLUTION">الحل</p>
+              <h4 data-ar="نموذج أولي قابل للاستخدام" data-en="A usable prototype">نموذج أولي قابل للاستخدام</h4>
+              <p data-ar="نموذج أولي يوضّح كيف يشتري المستخدم تذكرة ويربطها بهويته ويستخدمها للدخول إلى الفعالية." data-en="A prototype showing how a user buys a ticket, links it to their identity, and uses it to enter an event.">نموذج أولي يوضّح كيف يشتري المستخدم تذكرة ويربطها بهويته ويستخدمها للدخول إلى الفعالية.</p>
+            </div>
+            <div class="reveal d3">
+              <p class="step" data-ar="التجربة" data-en="THE EXPERIENCE">التجربة</p>
+              <h4 data-ar="واجهة مستقبلية" data-en="Future-facing UI">واجهة مستقبلية</h4>
+              <p data-ar="واجهة تطبيق مستقبلية تُظهر كيف يمكن تحويل الفكرة إلى منتج حقيقي قابل للإطلاق." data-en="A futuristic app interface that shows how the concept could become a real, shippable product.">واجهة تطبيق مستقبلية تُظهر كيف يمكن تحويل الفكرة إلى منتج حقيقي قابل للإطلاق.</p>
+            </div>
+          </div>
+
+          <!-- Role -->
+          <div class="project-role">
+            <h3 style="font-size:22px;letter-spacing:-0.01em" data-ar="دوري في هذا المشروع" data-en="My Role in This Project">دوري في هذا المشروع</h3>
+            <ul class="role-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-ar="صمّمت وبنيت واجهة التطبيق (UI)." data-en="Designed & built the application interface (UI).">صمّمت وبنيت واجهة التطبيق (UI).</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-ar="حوّلت الفكرة إلى نموذج أولي مرئي." data-en="Turned the concept into a visible prototype.">حوّلت الفكرة إلى نموذج أولي مرئي.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-ar="صمّمت تجربة المستخدم المستقبلية." data-en="Designed the future-facing user experience.">صمّمت تجربة المستخدم المستقبلية.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-ar="استكشفت دمج الذكاء الاصطناعي في المنتج." data-en="Explored integrating AI into the product.">استكشفت دمج الذكاء الاصطناعي في المنتج.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-ar="عملت على تقنيات التعرف على الوجه." data-en="Worked on face recognition techniques.">عملت على تقنيات التعرف على الوجه.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-ar="بنيت النموذج باستخدام Python وGoogle Colab." data-en="Built the model in Python & Google Colab.">بنيت النموذج باستخدام Python وGoogle Colab.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-ar="دمجت أدوات مثل Gradio وPillow وFace Recognition وQRCode." data-en="Integrated Gradio, Pillow, Face Recognition & QRCode.">دمجت أدوات مثل Gradio وPillow وFace Recognition وQRCode.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-ar="ربطت الفكرة بتدفق منتج واقعي." data-en="Connected the idea to a realistic product flow.">ربطت الفكرة بتدفق منتج واقعي.</span></li>
+            </ul>
+            <div class="tech-badges">
+              <span class="badge">Python</span>
+              <span class="badge">Google Colab</span>
+              <span class="badge">Pillow</span>
+              <span class="badge">Face Recognition</span>
+              <span class="badge">Gradio</span>
+              <span class="badge">QRCode</span>
+            </div>
+          </div>
+
+          <p class="disclaimer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+            <span data-ar="التذاكر البيومترية هو نموذج أولي مفاهيمي مدعوم بالذكاء الاصطناعي يستكشف كيف يمكن للهوية البيومترية أن يعيد صياغة التذاكر الرقمية." data-en="Biometric Tickets is a conceptual AI-powered prototype exploring how biometric identity could reshape digital ticketing.">التذاكر البيومترية هو نموذج أولي مفاهيمي مدعوم بالذكاء الاصطناعي يستكشف كيف يمكن للهوية البيومترية أن يعيد صياغة التذاكر الرقمية.</span>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== TECH STACK ===================== -->
+    <section id="skills">
+      <div class="wrap">
+        <span class="section-tag reveal" data-ar="٠٤ — الأدوات" data-en="04 — Toolbox">٠٤ — الأدوات</span>
+        <h2 class="section-title reveal d1" data-ar="المهارات والتقنيات." data-en="Skills &amp; Tech Stack.">المهارات والتقنيات.</h2>
+        <p class="section-lead reveal d1" data-ar="مُرتّبة حسب الغرض من كل مجال — لا جدارًا من الشارات." data-en="Organized by what each area is for — not a wall of badges.">مُرتّبة حسب الغرض من كل مجال — لا جدارًا من الشارات.</p>
+
+        <div class="stack-cols">
+          <div class="stack-group reveal">
+            <div class="stack-head"><h3 data-ar="البرمجة" data-en="Programming">البرمجة</h3><span class="line"></span></div>
+            <div class="stack-tags">
+              <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">C</span><span class="tag">C++</span><span class="tag">Java</span>
+            </div>
+          </div>
+          <div class="stack-group reveal d1">
+            <div class="stack-head"><h3 data-ar="الذكاء الاصطناعي وتعلّم الآلة" data-en="AI &amp; Machine Learning">الذكاء الاصطناعي وتعلّم الآلة</h3><span class="line"></span></div>
+            <div class="stack-tags">
+              <span class="tag" data-ar="تعلّم الآلة" data-en="Machine Learning">تعلّم الآلة</span><span class="tag" data-ar="الرؤية الحاسوبية" data-en="Computer Vision">الرؤية الحاسوبية</span><span class="tag">OCR</span>
+              <span class="tag" data-ar="معالجة الإشارات الرقمية" data-en="Digital Signal Processing">معالجة الإشارات الرقمية</span><span class="tag" data-ar="ذكاء قابل للتفسير" data-en="Explainable AI">ذكاء قابل للتفسير</span><span class="tag" data-ar="تعلّم موزّع" data-en="Federated Learning">تعلّم موزّع</span>
+            </div>
+          </div>
+          <div class="stack-group reveal">
+            <div class="stack-head"><h3 data-ar="البيانات" data-en="Data">البيانات</h3><span class="line"></span></div>
+            <div class="stack-tags">
+              <span class="tag" data-ar="تحليل البيانات" data-en="Data Analytics">تحليل البيانات</span><span class="tag" data-ar="معالجة البيانات المسبقة" data-en="Data Preprocessing">معالجة البيانات المسبقة</span><span class="tag" data-ar="التعامل مع البيانات" data-en="Data Handling">التعامل مع البيانات</span>
+            </div>
+          </div>
+          <div class="stack-group reveal d1">
+            <div class="stack-head"><h3 data-ar="اتجاهات الذكاء الاصطناعي" data-en="AI Trends">اتجاهات الذكاء الاصطناعي</h3><span class="line"></span></div>
+            <div class="stack-tags">
+              <span class="tag" data-ar="ذكاء اصطناعي توليدي" data-en="Generative AI">ذكاء اصطناعي توليدي</span><span class="tag" data-ar="نماذج اللغات الكبيرة" data-en="Large Language Models">نماذج اللغات الكبيرة</span><span class="tag" data-ar="تعلّم الآلة التطبيقي" data-en="Applied Machine Learning">تعلّم الآلة التطبيقي</span>
+              <span class="tag" data-ar="وكلاء الذكاء" data-en="AI Agents">وكلاء الذكاء</span><span class="tag" data-ar="ذكاء متعدد الوسائط" data-en="Multimodal AI">ذكاء متعدد الوسائط</span>
+            </div>
+          </div>
+          <div class="stack-group reveal">
+            <div class="stack-head"><h3 data-ar="التطوير" data-en="Development">التطوير</h3><span class="line"></span></div>
+            <div class="stack-tags">
+              <span class="tag">Git</span><span class="tag">GitHub</span><span class="tag" data-ar="تكامل تطبيقات الويب" data-en="Web App Integration">تكامل تطبيقات الويب</span><span class="tag" data-ar="حل المشكلات" data-en="Problem Solving">حل المشكلات</span>
+            </div>
+          </div>
+          <div class="stack-group reveal d1">
+            <div class="stack-head"><h3 data-ar="التصميم والمنتج" data-en="Design &amp; Product">التصميم والمنتج</h3><span class="line"></span></div>
+            <div class="stack-tags">
+              <span class="tag" data-ar="تصميم واجهة/تجربة المستخدم" data-en="UI/UX Design">تصميم واجهة/تجربة المستخدم</span><span class="tag" data-ar="التفكير المنتجي" data-en="Product Thinking">التفكير المنتجي</span><span class="tag" data-ar="النماذج الأولية" data-en="Prototyping">النماذج الأولية</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ACHIEVEMENTS ===================== -->
+    <section id="achievements">
+      <div class="wrap">
+        <span class="section-tag reveal" data-ar="٠٥ — التقدير" data-en="05 — Recognition">٠٥ — التقدير</span>
+        <h2 class="section-title reveal d1" data-ar="التقدير والإنجازات." data-en="Recognition &amp; Achievements.">التقدير والإنجازات.</h2>
+        <p class="section-lead reveal d1" data-ar="محطات حقيقية من المسابقات والهاكاثونات والتعلم المنظّم." data-en="Real milestones from competitions, hackathons, and structured learning.">محطات حقيقية من المسابقات والهاكاثونات والتعلم المنظّم.</p>
+
+        <div class="ach-grid">
+          <div class="ach reveal">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 01-10 0V4zM5 4H3v2a3 3 0 003 3M19 4h2v2a3 3 0 01-3 3"/></svg></span>
+            <div><h4 data-ar="المركز الثالث · معسكر تحليل البيانات «حَلّل»" data-en="3rd Place · Data Analysis Camp 'حَلّل'">المركز الثالث · معسكر تحليل البيانات «حَلّل»</h4><span data-ar="مسار تنافسي في تحليل البيانات" data-en="Competitive data analysis track">مسار تنافسي في تحليل البيانات</span></div>
+          </div>
+          <div class="ach reveal d1">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></span>
+            <div><h4 data-ar="هاكاثون «فكّر وهدف 2026»" data-en="Hackathon 'فكر وهدف 2026'">هاكاثون «فكّر وهدف 2026»</h4><span data-ar="مشاركة وتميّز" data-en="Participation & distinction">مشاركة وتميّز</span></div>
+          </div>
+          <div class="ach reveal d2">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div><h4 data-ar="هاكاثون دوري الذكاء الاصطناعي — النهائي" data-en="AI League Hackathon — Finalist">هاكاثون دوري الذكاء الاصطناعي — النهائي</h4><span data-ar="وصلت إلى الجولة النهائية" data-en="Reached the final round">وصلت إلى الجولة النهائية</span></div>
+          </div>
+          <div class="ach reveal d3">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.6l-1-1a5.5 5.5 0 10-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 000-7.8z"/></svg></span>
+            <div><h4 data-ar="١٥ ساعة تطوعية" data-en="15 Volunteering Hours">١٥ ساعة تطوعية</h4><span data-ar="يوم التأسيس · هاكاثون «فكر وهدف»" data-en="Founding Day · Hackathon 'فكر وهدف'">يوم التأسيس · هاكاثون «فكر وهدف»</span></div>
+          </div>
+          <div class="ach reveal">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></span>
+            <div><h4 data-ar="ورشة Cybersecurity-101" data-en="Cybersecurity-101 Workshop">ورشة Cybersecurity-101</h4><span data-ar="مشاركة" data-en="Participation">مشاركة</span></div>
+          </div>
+          <div class="ach reveal d1">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1 2.5 3 6 3s6-2 6-3v-5"/></svg></span>
+            <div><h4 data-ar="أساسيات الذكاء الاصطناعي + مشروع ختامي" data-en="AI Fundamentals + Capstone">أساسيات الذكاء الاصطناعي + مشروع ختامي</h4><span data-ar="دورة معتمدة بمشروع ختامي" data-en="Certified course with capstone project">دورة معتمدة بمشروع ختامي</span></div>
+          </div>
+          <div class="ach reveal d2">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/></svg></span>
+            <div><h4 data-ar="أساسيات الذكاء الاصطناعي" data-en="Artificial Intelligence Fundamentals">أساسيات الذكاء الاصطناعي</h4><span data-ar="معتمد" data-en="Certified">معتمد</span></div>
+          </div>
+          <div class="ach reveal d3">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M5 5l2 2M17 17l2 2M2 12h3M19 12h3M5 19l2-2M17 7l2-2"/></svg></span>
+            <div><h4 data-ar="Make Agentic AI Work for You" data-en="Make Agentic AI Work for You">Make Agentic AI Work for You</h4><span data-ar="معتمد" data-en="Certified">معتمد</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CERTIFICATES ===================== -->
+    <section id="certificates">
+      <div class="wrap">
+        <span class="section-tag reveal" data-ar="٠٦ — وثائق" data-en="06 — Credentials">٠٦ — وثائق</span>
+        <h2 class="section-title reveal d1" data-ar="معرض الشهادات." data-en="Certificate Gallery.">معرض الشهادات.</h2>
+        <p class="section-lead reveal d1" data-ar="مجموعة من الشهادات والإنجازات. اضغط أي صورة لعرضها بحجم كامل." data-en="A selection of certificates and achievements. Tap any to view it full size.">مجموعة من الشهادات والإنجازات. اضغط أي صورة لعرضها بحجم كامل.</p>
+
+        <div class="gallery reveal d2" id="gallery">
+          <figure><button class="cert" data-src="assets/img/certs/no6.png" aria-label="عرض الشهادة 1"><img src="assets/img/certs/no6.png" alt="شهادة" loading="lazy" /></button></figure>
+          <figure><button class="cert" data-src="assets/img/certs/hlel.png" aria-label="عرض الشهادة 2"><img src="assets/img/certs/hlel.png" alt="شهادة" loading="lazy" /></button></figure>
+          <figure><button class="cert" data-src="assets/img/certs/6we8.png" aria-label="عرض الشهادة 3"><img src="assets/img/certs/6we8.png" alt="شهادة" loading="lazy" /></button></figure>
+          <figure><button class="cert" data-src="assets/img/certs/ibm.png" aria-label="عرض الشهادة 4"><img src="assets/img/certs/ibm.png" alt="شهادة" loading="lazy" /></button></figure>
+          <figure><button class="cert" data-src="assets/img/certs/t6w3.png" aria-label="عرض الشهادة 5"><img src="assets/img/certs/t6w3.png" alt="شهادة" loading="lazy" /></button></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section id="education">
+      <div class="wrap">
+        <span class="section-tag reveal" data-ar="٠٧ — التعليم" data-en="07 — Education">٠٧ — التعليم</span>
+        <h2 class="section-title reveal d1" data-ar="التعليم." data-en="Education.">التعليم.</h2>
+
+        <div class="edu-grid">
+          <div class="edu-main reveal">
+            <div class="deg" data-ar="بكالوريوس · ذكاء اصطناعي" data-en="Bachelor's Degree · Artificial Intelligence">بكالوريوس · ذكاء اصطناعي</div>
+            <div class="uni" data-ar="جامعة بيشة" data-en="University of Bisha">جامعة بيشة</div>
+            <div class="edu-meta">
+              <div class="m"><div class="k" data-ar="المستوى" data-en="Level">المستوى</div><div class="v" data-ar="7 — السنة الرابعة" data-en="7 — Fourth Year">7 — السنة الرابعة</div></div>
+              <div class="m gpa"><div class="k" data-ar="المعدل" data-en="GPA">المعدل</div><div class="v grad">4.66 / 5</div></div>
+              <div class="m"><div class="k" data-ar="الموقع" data-en="Location">الموقع</div><div class="v" data-ar="بيشة، السعودية" data-en="Bisha, Saudi Arabia">بيشة، السعودية</div></div>
+            </div>
+          </div>
+          <aside class="reveal d1">
+            <div class="card" style="padding:22px">
+              <p style="color:var(--text-soft);font-size:15px" data-ar="تدرس الذكاء الاصطناعي في جامعة بيشة مع بناء مشاريع تطبيقية حقيقية — تجمع بين الأسس الأكاديمية والعمل المنتجي العملي." data-en="Studying AI at the University of Bisha while building real, applied projects — pairing academic foundations with hands-on product work.">تدرس الذكاء الاصطناعي في جامعة بيشة مع بناء مشاريع تطبيقية حقيقية — تجمع بين الأسس الأكاديمية والعمل المنتجي العملي.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== WHERE HEADING + ROADMAP ===================== -->
+    <section id="roadmap">
+      <div class="wrap">
+        <span class="section-tag reveal" data-ar="٠٨ — المسار" data-en="08 — Trajectory">٠٨ — المسار</span>
+        <h2 class="section-title reveal d1" data-ar="إلى أين تتجه." data-en="Where I'm Heading.">إلى أين تتجه.</h2>
+        <p class="section-lead reveal d1" data-ar="وجهتها المهنية واضحة: أن تصبح مهندسة ذكاء اصطناعي تبني ذكاءً تطبيقيًا جاهزًا للإنتاج." data-en="My professional target is clear: become an AI Engineer building applied, production-ready intelligence.">وجهتها المهنية واضحة: أن تصبح مهندسة ذكاء اصطناعي تبني ذكاءً تطبيقيًا جاهزًا للإنتاج.</p>
+
+        <div class="heading-grid" style="margin-top:40px">
+          <div class="reveal">
+            <h3 style="font-size:24px;letter-spacing:-0.01em;margin-bottom:10px" data-ar="الاتجاه المهني" data-en="Career Direction">الاتجاه المهني</h3>
+            <p style="color:var(--text-soft);margin-bottom:6px" data-ar="تستهدف وظائف «مهندسة ذكاء اصطناعي» مع التركيز على:" data-en="Targeting AI Engineer roles with focus on:">تستهدف وظائف «مهندسة ذكاء اصطناعي» مع التركيز على:</p>
+            <div class="focus-tags">
+              <span class="tag" data-ar="ذكاء اصطناعي تطبيقي" data-en="Applied AI">ذكاء اصطناعي تطبيقي</span><span class="tag" data-ar="تعلّم الآلة" data-en="Machine Learning">تعلّم الآلة</span><span class="tag" data-ar="ذكاء توليدي" data-en="Generative AI">ذكاء توليدي</span>
+              <span class="tag">LLMs</span><span class="tag" data-ar="هندسة البيانات" data-en="Data Engineering">هندسة البيانات</span><span class="tag" data-ar="تطبيقات الذكاء الاصطناعي" data-en="AI Applications">تطبيقات الذكاء الاصطناعي</span>
+            </div>
+            <p style="color:var(--text-dim);margin-top:18px;font-size:14.5px" data-ar="مهتمة بفرص ضمن «سدايا» والجهات السعودية التي تقدّم الذكاء الاصطناعي." data-en="Interested in opportunities within SDAIA and Saudi organizations advancing AI.">مهتمة بفرص ضمن «سدايا» والجهات السعودية التي تقدّم الذكاء الاصطناعي.</p>
+          </div>
+
+          <div class="reveal d1">
+            <h3 style="font-size:24px;letter-spacing:-0.01em;margin-bottom:4px" data-ar="تركيز المستقبل" data-en="Future Focus">تركيز المستقبل</h3>
+            <p style="color:var(--text-dim);font-size:13px;font-family:var(--font-mono);margin-bottom:16px" data-ar="مجالات أطوّرها الآن — لم أتقنها بعد." data-en="Areas I'm actively developing — not yet mastered.">مجالات أطوّرها الآن — لم أتقنها بعد.</p>
+            <div class="roadmap">
+              <div class="road-item"><span class="n">01</span><div><h4 data-ar="MLOps والسحابة" data-en="MLOps &amp; Cloud">MLOps والسحابة</h4><p data-ar="نشر نماذج الذكاء الاصطناعي وإدارتها في بيئات الإنتاج." data-en="Deploying and managing AI models in production environments.">نشر نماذج الذكاء الاصطناعي وإدارتها في بيئات الإنتاج.</p></div></div>
+              <div class="road-item"><span class="n">02</span><div><h4 data-ar="ضبط نماذج اللغات وRAG" data-en="LLM Fine-Tuning &amp; RAG">ضبط نماذج اللغات وRAG</h4><p data-ar="تخصيص النماذج الأساسية وربطها بقواعد معرفة خاصة." data-en="Customizing foundation models and connecting them with private knowledge bases.">تخصيص النماذج الأساسية وربطها بقواعد معرفة خاصة.</p></div></div>
+              <div class="road-item"><span class="n">03</span><div><h4 data-ar="ذكاء وكيل" data-en="Agentic AI">ذكاء وكيل</h4><p data-ar="بناء أنظمة ذكية قادرة على التخطيط وتنفيذ المهام." data-en="Building intelligent systems capable of planning and executing tasks.">بناء أنظمة ذكية قادرة على التخطيط وتنفيذ المهام.</p></div></div>
+              <div class="road-item"><span class="n">04</span><div><h4 data-ar="ذكاء متعدد الوسائط" data-en="Multimodal AI">ذكاء متعدد الوسائط</h4><p data-ar="دمج فهم النص والصورة والصوت." data-en="Combining text, image, and audio understanding.">دمج فهم النص والصورة والصوت.</p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== STRENGTHS ===================== -->
+    <section id="strengths">
+      <div class="wrap">
+        <span class="section-tag reveal" data-ar="٠٩ — الدافع" data-en="09 — Drive">٠٩ — الدافع</span>
+        <h2 class="section-title reveal d1" data-ar="ما الذي يحركني." data-en="What Drives Me.">ما الذي يحركني.</h2>
+
+        <div class="strengths-grid">
+          <div class="strength reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 22h4M12 2a7 7 0 00-4 12.7V17h8v-2.3A7 7 0 0012 2z"/></svg></span><h4 data-ar="الابتكار" data-en="Innovation">الابتكار</h4></div>
+          <div class="strength reveal d1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 21l-4.3-4.3M11 19a8 8 0 100-16 8 8 0 000 16z"/></svg></span><h4 data-ar="حل المشكلات" data-en="Problem Solving">حل المشكلات</h4></div>
+          <div class="strength reveal d2"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></span><h4 data-ar="التعلّم السريع" data-en="Fast Learning">التعلّم السريع</h4></div>
+          <div class="strength reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a9 9 0 11-9-9M21 3v6h-6"/></svg></span><h4 data-ar="المرونة" data-en="Adaptability">المرونة</h4></div>
+          <div class="strength reveal d1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4L8 14 2 9.4h7.6L12 2z"/></svg></span><h4 data-ar="تفكير منتجي مبدع" data-en="Creative Product Thinking">تفكير منتجي مبدع</h4></div>
+          <div class="strength reveal d2"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span><h4 data-ar="التصميم" data-en="Design">التصميم</h4></div>
+        </div>
+
+        <p class="strength-quote reveal" data-ar="قوية، شغوفة، وواثقة — برغبة دائمة في تحويل الأفكار إلى شيء يراه الناس ويستخدمونه فعلًا." data-en="Strong, passionate, and confident — with a constant desire to turn ideas into something people can actually see and use.">قوية، شغوفة، وواثقة — برغبة دائمة في تحويل الأفكار إلى شيء يراه الناس ويستخدمونه فعلًا.</p>
+      </div>
+    </section>
+
+    <!-- ===================== PROFESSIONAL STATEMENT ===================== -->
+    <section id="statement">
+      <div class="wrap">
+        <span class="section-tag reveal" data-ar="١٠ — النهج" data-en="10 — Approach">١٠ — النهج</span>
+        <div class="statement reveal d1">
+          <p class="mark" data-ar="// بيان مهني" data-en="// PROFESSIONAL STATEMENT">// بيان مهني</p>
+          <blockquote>
+            "أنا لا أبحث فقط عن تنفيذ المهام المطلوبة؛ أحرص على فهم المشكلة من جذورها، ثم تحويل البيانات والأفكار إلى حلول عملية وتطبيقية يمكن أن تضيف قيمة حقيقية."
+          </blockquote>
+          <blockquote class="ar">
+            "I don't just look to execute the tasks asked of me; I make sure to understand the problem from its roots, then turn data and ideas into practical, applicable solutions that add real value."
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact">
+      <div class="wrap contact">
+        <span class="section-tag reveal" style="margin-inline:auto" data-ar="١١ — تواصل" data-en="11 — Contact">١١ — تواصل</span>
+        <h2 class="section-title reveal d1" data-ar="لنتبنِ شيئًا ذكيًا معًا." data-en="Let's Build Something Intelligent.">لنتبنِ شيئًا ذكيًا معًا.</h2>
+        <p class="section-lead reveal d1" data-ar="متاحة للتدريب، وفرص الذكاء الاصطناعي، والمشاريع التعاونية، والتحديات التقنية ذات المعنى." data-en="Open to internships, AI opportunities, collaborative projects, and meaningful technical challenges.">متاحة للتدريب، وفرص الذكاء الاصطناعي، والمشاريع التعاونية، والتحديات التقنية ذات المعنى.</p>
+
+        <div class="contact-links reveal d2">
+          <div class="contact-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>
+            <div><div class="k" data-ar="البريد" data-en="Email">البريد</div><div class="v" id="emailText">aljory002151@gmail.com</div></div>
+            <button class="copy-btn" id="copyEmail" aria-label="نسخ البريد"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg></button>
+          </div>
+          <a class="contact-card" href="https://www.linkedin.com/in/aljuri-turki-almuawi-37a6a7426" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8.34 18V9.99H5.67V18h2.67zM7 8.76a1.55 1.55 0 100-3.1 1.55 1.55 0 000 3.1zM18.34 18v-4.43c0-2.36-1.26-3.46-2.94-3.46-1.36 0-1.97.75-2.31 1.28V9.99h-2.67c.04.75 0 8.01 0 8.01h2.67v-4.47c0-.24.02-.48.09-.65.19-.48.63-.97 1.36-.97.96 0 1.35.73 1.35 1.8V18h2.45z"/></svg>
+            <div><div class="k">LinkedIn</div><div class="v">aljuri-turki-almuawi</div></div>
+          </a>
+          <a class="contact-card" href="https://github.com/aljory002151-star" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.36 9.36 0 0112 6.84c.85 0 1.71.12 2.51.34 1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg>
+            <div><div class="k">GitHub</div><div class="v">aljory002151-star</div></div>
+          </a>
+        </div>
+
+        <div class="contact-cta reveal d3">
+          <a href="mailto:aljory002151@gmail.com" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>
+            <span data-ar="راسلني" data-en="Email Me">راسلني</span>
+          </a>
+          <a href="https://www.linkedin.com/in/aljuri-turki-almuawi-37a6a7426" target="_blank" rel="noopener" class="btn btn-ghost">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8.34 18V9.99H5.67V18h2.67zM7 8.76a1.55 1.55 0 100-3.1 1.55 1.55 0 000 3.1zM18.34 18v-4.43c0-2.36-1.26-3.46-2.94-3.46-1.36 0-1.97.75-2.31 1.28V9.99h-2.67c.04.75 0 8.01 0 8.01h2.67v-4.47c0-.24.02-.48.09-.65.19-.48.63-.97 1.36-.97.96 0 1.35.73 1.35 1.8V18h2.45z"/></svg>
+            <span data-ar="تواصل عبر LinkedIn" data-en="Connect on LinkedIn">تواصل عبر LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div>
+        <a class="brand" href="#home">
+          <span class="dot" aria-hidden="true">A</span>
+          <span data-ar="الجوري تركي المعاوي" data-en="Aljory Turki Almuawi">الجوري تركي المعاوي</span>
+          <small data-ar="مهندسة ذكاء اصطناعي تحت التدريب" data-en="AI Engineer in Progress">مهندسة ذكاء اصطناعي تحت التدريب</small>
+        </a>
+        <p data-ar="ذكاء اصطناعي · تعلّم آلة تطبيقي · ذكاء توليدي" data-en="Artificial Intelligence · Applied ML · Generative AI">ذكاء اصطناعي · تعلّم آلة تطبيقي · ذكاء توليدي</p>
+        <p style="margin-top:8px" data-ar="المملكة العربية السعودية" data-en="Saudi Arabia">المملكة العربية السعودية</p>
+      </div>
+      <div>
+        <h5 data-ar="استكشف" data-en="Explore">استكشف</h5>
+        <div class="footer-links">
+          <a href="#about" data-ar="نبذة عني" data-en="About">نبذة عني</a>
+          <a href="#projects" data-ar="المشاريع" data-en="Projects">المشاريع</a>
+          <a href="#skills" data-ar="المهارات" data-en="Skills">المهارات</a>
+          <a href="#achievements" data-ar="الإنجازات" data-en="Achievements">الإنجازات</a>
+          <a href="#education" data-ar="التعليم" data-en="Education">التعليم</a>
+        </div>
+      </div>
+      <div>
+        <h5 data-ar="تواصل" data-en="Connect">تواصل</h5>
+        <div class="footer-links">
+          <a href="https://github.com/aljory002151-star" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.36 9.36 0 0112 6.84c.85 0 1.71.12 2.51.34 1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg> <span data-ar="GitHub" data-en="GitHub">GitHub</span></a>
+          <a href="https://www.linkedin.com/in/aljuri-turki-almuawi-37a6a7426" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8.34 18V9.99H5.67V18h2.67zM7 8.76a1.55 1.55 0 100-3.1 1.55 1.55 0 000 3.1zM18.34 18v-4.43c0-2.36-1.26-3.46-2.94-3.46-1.36 0-1.97.75-2.31 1.28V9.99h-2.67c.04.75 0 8.01 0 8.01h2.67v-4.47c0-.24.02-.48.09-.65.19-.48.63-.97 1.36-.97.96 0 1.35.73 1.35 1.8V18h2.45z"/></svg> <span data-ar="LinkedIn" data-en="LinkedIn">LinkedIn</span></a>
+          <a href="mailto:aljory002151@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg> <span data-ar="البريد" data-en="Email">البريد</span></a>
+          <a href="https://ish3-is.github.io/WEB/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg> <span data-ar="مدار التقنية" data-en="Madar Tech">مدار التقنية</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="footer-bottom">
+        <span>© 2026 الجوري تركي المعاوي</span>
+        <span data-ar="عضوة في أكاديمية مدار التقنية" data-en="Member of Madar Tech Academy">عضوة في أكاديمية مدار التقنية</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="معاينة الشهادة">
+    <button class="lb-close" id="lbClose" aria-label="إغلاق">×</button>
+    <img id="lbImg" src="" alt="معاينة الشهادة" />
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+    <span id="toastMsg" data-ar="تم النسخ إلى الحافظة" data-en="Copied to clipboard">تم النسخ إلى الحافظة</span>
+  </div>
+
+  <!-- Back to top -->
+  <button class="to-top" id="toTop" aria-label="العودة للأعلى">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <!-- Custom cursor -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <script src="assets/js/neural.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
